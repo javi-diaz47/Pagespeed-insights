@@ -50,12 +50,12 @@ celeste #026fff*/
 }
 
 body{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', system-ui;
   margin: 0;
 }
 h1, h2, h3, h4, h5, h6
 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Fjalla One', system-ui;
 }
 figure{
   margin: 0;
@@ -134,7 +134,7 @@ h1 strong{
 h2{
   color: #026fff;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', system-ui;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
@@ -163,7 +163,7 @@ h2{
   flex-wrap: wrap;
 }
 .project strong{
-  font-family: 'Fjalla One';
+  font-family: 'Fjalla One', system-ui;
 }
 .project-title{
   font-size: 30px;
@@ -240,14 +240,14 @@ h2{
   width: 100%;
 }
 .form-email h3{
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', system-ui;
 }
 .form-email input{
   border-color: grey;
   border-style: solid;
   border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  background-image: url('../Images/envelope.svg');
+  background-image: url('Images/envelope.svg');
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center ;
@@ -261,7 +261,7 @@ h2{
   padding: 10px 0;
   border-radius: 5px;
   width: 100px;
-  margin-top: 10px;
+  margin: 10px 0 10px;
 }
 
 .social-link{
@@ -283,6 +283,12 @@ h2{
 }
 .footer a{
   color: #fff;
+}
+.enterprise{
+  margin-left: 1em
+}
+.designer{
+  margin-right: 1em;
 }
 @media screen and (max-width: 1023px) {
   /* Hero */
@@ -455,7 +461,6 @@ h2{
     padding: 2em 1em;
   }
   /* Portfolio */
-
   /* event */
   .event-detail{
     margin: -2em .5em .5em;

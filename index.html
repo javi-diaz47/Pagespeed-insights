@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
   <title>Javier Díaz</title>
   <link rel="icon" type="image/png" href="Images/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-  <link rel="stylesheet" href="css/master.css">
+  <style>
+    @font-face{font-family:'icomoon';src:url('icons/fonts/icomoon.eot?lp4yuw');src:url('icons/fonts/icomoon.eot?lp4yuw#iefix') format('embedded-opentype'),url('icons/fonts/icomoon.ttf?lp4yuw') format('truetype'),url('icons/fonts/icomoon.woff?lp4yuw') format('woff'),url('icons/fonts/icomoon.svg?lp4yuw#icomoon') format('svg');font-weight:normal;font-style:normal}[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-burger-button:before{content:"\e5d2"}body{font-family:'Source Sans Pro',system-ui;margin:0}h1,h2,h3,h6{font-family:'Fjalla One',system-ui}figure{margin:0}.container{max-width:1000px;flex:1;margin:0 auto;display:inherit;height:inherit;justify-content:inherit;align-items:inherit;flex-wrap:inherit;padding:0 1em}.burger-button{display:none}.header{background-color:#1d252c;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;height:90px}.header a{color:#fff;text-decoration:none;text-transform:uppercase}.menu{height:inherit}.menu ul{list-style:none;padding:0;margin:0;display:flex;height:inherit}.menu li{height:inherit}.menu a{display:flex;align-items:center;height:inherit;padding:0 10px}.hero{height:300px;background-color:#1d252c;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}h1{color:#fff;font-size:2em}h1 strong{color:#026fff}h2{color:#026fff;text-transform:uppercase;font-family:'Source Sans Pro',system-ui;font-weight:bold;font-size:24px;margin-bottom:40px}.hero-image{width:400px;height:300px;object-fit:cover;position:relative}.portfolio{background:#fafafa;padding:20px;width:auto}.project{display:flex;background:#fff;box-shadow:3px 5px 33px #888888;border-radius:10px;padding:20px;margin-bottom:50px;align-items:center;justify-content:space-between;flex-wrap:wrap}.project strong{font-family:'Fjalla One',system-ui}.project-title{font-size:30px;margin:0 0 10px}.project-course,.project-date,.project-url{margin:10px 0}.project-description{font-size:20px}.project-details{width:50%}.project-imageContainer{width:50%}.project-image{max-width:100%}
+  </style>
 </head>
   <body>
     <!-- Header That's right  -->
@@ -133,7 +134,7 @@
         <form action="/suscription/" class="form-email">
           <h3>¿ Creamos algo juntos ?</h3>
           <input type="text" placeholder="Déjame tu email" name="" id="email">
-          <button type="button" name="button">Enviar</button>
+          <button class="send"type="button" name="button">Enviar</button>
         </form>
         <div class="social">
           <i class="icon-twitter social-link "></i>
@@ -147,13 +148,20 @@
     <!-- footer -->
     <footer class="footer">
       <div>
-        <p>Curso de Desarrollo web online 2018 <img src="Images/platzi.png" width="80" alt="platzi"></p>
+        <p class="enterprise">Curso de Desarrollo web online 2018 <img src="Images/platzi.png" width="80" alt="platzi"></p>
       </div>
       <div>
-        <p>Designed with ❤ by <a href="https://twitter.com">@thespianartist</a></p>
+        <p class="designer">Designed with ❤ by <a href="https://twitter.com">@thespianartist</a></p>
       </div>
     </footer>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script type="text/javascript">
+
       // const $menu = document.getElementById('menu')
       // const $burgerBtn = document.getElementById('btn')
       const $menu = document.querySelector('.menu')
@@ -182,7 +190,17 @@
         }
       }
       validation(media)
+
+      // Cargando fuentes de manera asincrona
+      WebFont.load({
+        google: {
+          families: ['Fjalla+One|Source+Sans+Pro: normal, normal']
+        }
+      })
+
+
     </script>
+
   </body>
 
 </html>
